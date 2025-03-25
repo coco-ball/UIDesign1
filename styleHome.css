@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* 방문한 후에도 검은색 유지 */
+}
+
+.room {
+  background-color: white;
+  width: 700px;
+  height: 310px;
+  padding: 100px 0px 30px 0;
+}
+
+.door {
+  font-size: smaller;
+  position: relative;
+  top: -375px;
+  left: 495px;
+}
+
+.door:hover {
+  color: rgb(177, 215, 210);
+  transition: all 200ms;
+}

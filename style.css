@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 8px 32px;
+  /* color: rgb(0, 158, 158);
+  background-color: rgb(221, 243, 250); */
+}
+
+ul {
+  padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* 방문한 후에도 검은색 유지 */
+}
+
+pre {
+  margin: 0;
+  color: black;
+}
+
+.home-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.a-container {
+  /* margin-top: 20px; */
+  margin-left: 800px;
+}
+
+.home:hover {
+  color: rgb(177, 215, 210);
+  transition: all 200ms;
+}
+
+.sign {
+  margin-left: 800px;
+}
