@@ -31,6 +31,7 @@ pre {
   position: absolute;
   top: 20px;
   left: 20px;
+  z-index: 2;
 }
 
 .a-container {
@@ -57,9 +58,4 @@ pre {
 .link {
   text-decoration-line: underline;
   color: black;
-}
-
-.link:hover {
-  color: rgb(177, 215, 210);
-  transition: all 200ms;
 }
