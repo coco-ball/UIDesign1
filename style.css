@@ -51,6 +51,7 @@ pre {
   position: absolute;
   top: 200px;
   left: 32px;
+  z-index: 10;
 }
 
 .link {
