@@ -56,4 +56,10 @@ pre {
 
 .link {
   text-decoration-line: underline;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(177, 215, 210);
+  transition: all 200ms;
 }
