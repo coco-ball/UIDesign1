@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+#stage {
+  width: 600px;
+  height: 420px;
+  margin: auto;
+  background: linear-gradient(180deg, #5d5d5d 0%, #000 100%);
+  position: relative;
+}
+
+#ramen {
+  position: absolute;
+  top: 95px;
+  left: 60px;
+}
+
+#text-shin {
+  position: absolute;
+  left: 15px;
+  top: -10px;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 1.5px 1.125px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #ebd9ea;
+  font-weight: bold;
+  font-size: 5.5rem;
+}
+
+#text-ramen {
+  position: absolute;
+  left: 89px;
+  top: 108px;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 1.5px 1.125px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #ebd9ea;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#apple {
+  position: absolute;
+  left: 150px;
+  top: 235px;
+}
+
+#apple-head {
+  position: absolute;
+  left: 35px;
+}
+
+#pocari {
+  position: absolute;
+  left: 260px;
+  top: 90px;
+}
+
+#pocari-lid {
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+
+#text-pocari {
+  position: absolute;
+  top: 98px;
+  left: -94px;
+  width: 15rem;
+  color: #869dd3;
+  text-shadow: 0px 1.5px 1.125px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 2.2rem;
+  transform: rotate(90deg);
+}
+
+#mario {
+  position: absolute;
+  left: 350px;
+  top: 25px;
+}
+
+#mario-leftleg {
+  position: absolute;
+  left: 65px;
+  top: 240px;
+}
+
+#mario-rightleg {
+  position: absolute;
+  left: 80px;
+  top: 270px;
+}
+
+#mario-body {
+  position: absolute;
+  left: 20px;
+  top: 170px;
+}
+
+#mario-arm {
+  position: absolute;
+  left: 50px;
+  top: 210px;
+}
+
+#mario-head {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

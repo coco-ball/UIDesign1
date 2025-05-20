@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  padding: 8px 32px;
-  /* color: rgb(0, 158, 158);
-  background-color: rgb(221, 243, 250); */
+  height: 100vh;
+  /* background-color: black; */
 }
 
 ul {
@@ -20,6 +19,12 @@ a:visited {
 pre {
   margin: 0;
   color: black;
+}
+
+.introduction {
+  padding: 8px 32px;
+  height: 380px;
+  /* background-color: white; */
 }
 
 .home-container {
@@ -40,4 +45,14 @@ pre {
 
 .sign {
   margin-left: 800px;
+}
+
+.link-list {
+  position: absolute;
+  top: 200px;
+  left: 32px;
+}
+
+.link {
+  text-decoration-line: underline;
 }

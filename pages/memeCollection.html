@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meme Collection</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleMeme.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="bookcase-title">
+      <p>Chaewon's Meme Collection</p>
+      <p>Download whatever u want!</p>
+      <p>Last Update - 2025.05.20.</p>
+    </div>
+    <div id="bookcase"></div>
+
+    <script>
+      const container = document.getElementById("bookcase");
+      const extensions = ["png", "jpg", "jpeg"];
+
+      function tryLoadImage(baseName, callback) {
+        let index = 0;
+
+        function tryNext() {
+          if (index >= extensions.length) return; // 아무 확장자도 없으면 끝
+
+          const ext = extensions[index];
+          const img = new Image();
+          img.src = `../img/${baseName}.${ext}`;
+          img.alt = baseName;
+
+          img.onload = () => callback(img); // 성공했으면 콜백 호출 (화면에 추가)
+          img.onerror = () => {
+            index++;
+            tryNext(); // 다음 확장자 시도
+          };
+        }
+
+        tryNext();
+      }
+
+      for (let i = 1; i <= 20; i++) {
+        const baseName = `m${i}`;
+        tryLoadImage(baseName, (img) => container.appendChild(img));
+      }
+    </script>
+    <!-- <script>
+      const container = document.getElementById("bookcase");
+
+      for (let i = 1; i <= 20; i++) {
+        const img = document.createElement("img");
+        img.src = `img/m${i}.png`;
+        img.alt = `m${i}`;
+        container.appendChild(img);
+      }
+    </script> -->
+  </body>
+</html>
