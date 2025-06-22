@@ -1,7 +1,21 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --hover-color: rgb(177, 215, 210);
+}
+
+body.dark {
+  --bg-color: rgb(25, 25, 25);
+  --text-color: white;
+  --hover-color: rgb(143, 236, 216);
+}
+
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   height: 100vh;
-  /* background-color: black; */
+  transition: all 200ms;
 }
 
 ul {
@@ -12,13 +26,17 @@ a {
   text-decoration: none;
 }
 
+button {
+  margin-left: 32px;
+}
+
 a:visited {
-  color: black; /* 방문한 후에도 검은색 유지 */
+  color: var(--text-color);
 }
 
 pre {
   margin: 0;
-  color: black;
+  color: var(--text-color);
 }
 
 .introduction {
@@ -40,7 +58,7 @@ pre {
 }
 
 .home:hover {
-  color: rgb(177, 215, 210);
+  color: var(--hover-color);
   transition: all 200ms;
 }
 
@@ -57,5 +75,5 @@ pre {
 
 .link {
   text-decoration-line: underline;
-  color: black;
+  color: var(--text-color);
 }
