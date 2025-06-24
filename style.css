@@ -5,7 +5,7 @@
 }
 
 body.dark {
-  --bg-color: rgb(25, 25, 25);
+  --bg-color: rgb(30, 32, 34);
   --text-color: white;
   --hover-color: rgb(143, 236, 216);
 }
@@ -19,7 +19,8 @@ body {
 }
 
 ul {
-  padding: 0 24px;
+  padding: 0 0px;
+  list-style-type: none;
 }
 
 a {
@@ -27,7 +28,10 @@ a {
 }
 
 button {
-  margin-left: 32px;
+  position: absolute;
+  bottom: 40px;
+  left: 32px;
+  z-index: 10;
 }
 
 a:visited {
@@ -68,12 +72,33 @@ pre {
 
 .link-list {
   position: absolute;
-  top: 200px;
+  top: 440px;
   left: 32px;
   z-index: 10;
 }
 
 .link {
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+  text-decoration-line: none;
+  font-style: italic;
   color: var(--text-color);
+  font-size: 14px;
+}
+
+.link :hover {
+  color: var(--hover-color);
+}
+
+.project-list-1 {
+  position: absolute;
+  top: 440px;
+  left: 315px;
+  z-index: 10;
+}
+
+.project-list-2 {
+  position: absolute;
+  top: 440px;
+  left: 616px;
+  z-index: 10;
 }
